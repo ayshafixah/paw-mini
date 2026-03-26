@@ -1,0 +1,412 @@
+%PDF-1.4
+%
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 3317 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+50 790 Td
+(ENGINEERING MINI PROJECT ABSTRACT) Tj
+T*
+() Tj
+T*
+(PROJECT TITLE) Tj
+T*
+(Paws ? Pet Adoption and Pet Care Commerce Platform) Tj
+T*
+() Tj
+T*
+(ABSTRACT) Tj
+T*
+(Paws is a full-stack web application designed as an engineering mini project to digitize pet) Tj
+T*
+(adoption workflows, pet care operations, and basic pet product commerce in one integrated) Tj
+T*
+(platform. The system combines role-based user management \(user, staff, admin\), pet listing and) Tj
+T*
+(moderation, adoption request processing, shopping cart and order flow, medical record tracking,) Tj
+T*
+(and in-app notifications. The project demonstrates practical software engineering concepts) Tj
+T*
+(including modular API design, database schema design, authentication/authorization, and) Tj
+T*
+(client?server integration with a modern TypeScript-based stack.) Tj
+T*
+() Tj
+T*
+(The backend is built with Node.js + Express in TypeScript and exposes RESTful APIs for) Tj
+T*
+(authentication, pets, adoptions, shop, cart, orders, medical records, and notifications.) Tj
+T*
+(Authentication uses JWT tokens, passwords are hashed with bcrypt, and role checks enforce) Tj
+T*
+(access boundaries for admin/staff-only operations. The database layer uses SQLite through) Tj
+T*
+(`better-sqlite3`, with schema initialization and migration checks handled programmatically.) Tj
+T*
+() Tj
+T*
+(The frontend is built with React 19 + Vite + TypeScript, using React Router for client-side) Tj
+T*
+(routing and Tailwind CSS v4 for styling. Additional UI/UX libraries include lucide-react icons,) Tj
+T*
+(motion animations, and sonner toast notifications. The frontend consumes backend APIs via a) Tj
+T*
+(centralized API client and stores session state in local storage for persistent login behavior.) Tj
+T*
+() Tj
+T*
+(Overall, this mini project is suitable for demonstrating end-to-end product engineering from) Tj
+T*
+(local development to deployment packaging, while remaining compact enough for academic) Tj
+T*
+(evaluation and iterative feature enhancement.) Tj
+T*
+() Tj
+T*
+(---) Tj
+T*
+() Tj
+T*
+(ENGINEERING PROBLEM STATEMENT) Tj
+T*
+(Traditional pet adoption handling in small shelters is often manual, fragmented, and difficult) Tj
+T*
+(to audit. The problem addressed is to provide a unified, digital system that supports:) Tj
+T*
+(? transparent pet listing and approval workflows,) Tj
+T*
+(? secure user registration and role-based operations,) Tj
+T*
+(? structured adoption application tracking,) Tj
+T*
+(? basic e-commerce for pet supplies,) Tj
+T*
+(? medical record follow-ups and user notifications.) Tj
+T*
+() Tj
+T*
+(OBJECTIVES) Tj
+T*
+(1. Build a multi-role pet platform with secure authentication.) Tj
+T*
+(2. Support pet discovery and adoption application lifecycle.) Tj
+T*
+(3. Provide admin/staff dashboards for moderation and operations.) Tj
+T*
+(4. Integrate pet shop cart and order workflows.) Tj
+T*
+(5. Persist all core entities in a relational database.) Tj
+T*
+(6. Deliver a deployable, container-friendly project structure.) Tj
+T*
+() Tj
+T*
+(CORE FEATURE MODULES) Tj
+T*
+(? Authentication & Profile: signup, login, JWT profile access, profile updates.) Tj
+T*
+(? Pet Management: listing available pets, submitting pets, admin approval/rejection.) Tj
+T*
+(? Adoption Management: submit adoption requests, admin review and status updates.) Tj
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 10 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Length 2487 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+50 790 Td
+(? Pet Shop: product listing, admin product CRUD, inventory-aware cart flow.) Tj
+T*
+(? Orders & Payments: order creation and payment verification \(Razorpay integration\).) Tj
+T*
+(? Medical Records: vaccination and due-date entries by staff/admin.) Tj
+T*
+(? Notifications: user-targeted status and reminder messaging.) Tj
+T*
+() Tj
+T*
+(TECHNOLOGY STACK SUMMARY) Tj
+T*
+() Tj
+T*
+(PROGRAMMING LANGUAGES) Tj
+T*
+(? TypeScript \(frontend + backend\)) Tj
+T*
+(? JavaScript runtime via Node.js \(ES module project\)) Tj
+T*
+(? SQL \(SQLite schema and queries\)) Tj
+T*
+(? CSS \(Tailwind + custom styles\)) Tj
+T*
+(? HTML \(single-page app entry\)) Tj
+T*
+() Tj
+T*
+(BACKEND FRAMEWORK AND SERVER STACK) Tj
+T*
+(? Node.js 20 \(LTS\) runtime target) Tj
+T*
+(? Express 4 as backend web framework) Tj
+T*
+(? CORS and JSON middleware for API interoperability) Tj
+T*
+(? JWT \(`jsonwebtoken`\) for authentication tokens) Tj
+T*
+(? bcryptjs for password hashing) Tj
+T*
+(? Razorpay SDK for payment order/verification workflow) Tj
+T*
+() Tj
+T*
+(DATABASE CONNECTIVITY) Tj
+T*
+(? Database: SQLite) Tj
+T*
+(? Driver/ORM layer: `better-sqlite3` \(direct SQL, no ORM\)) Tj
+T*
+(? Connectivity strategy: file-based DB path from `DATABASE_PATH` env, with fallback to local) Tj
+T*
+(`paws.db`) Tj
+T*
+(? Schema bootstrap: auto-created tables at startup \(`initDb\(\)`\)) Tj
+T*
+(? Migration behavior: runtime check for missing profile columns \(address, phone\)) Tj
+T*
+() Tj
+T*
+(FRONTEND STACK) Tj
+T*
+(? React 19) Tj
+T*
+(? Vite 6 build tooling and dev server) Tj
+T*
+(? React Router DOM 7 for navigation) Tj
+T*
+(? Tailwind CSS 4 + custom design tokens/styles) Tj
+T*
+(? lucide-react icons) Tj
+T*
+(? motion animations) Tj
+T*
+(? sonner toast notifications) Tj
+T*
+() Tj
+T*
+(DEVELOPMENT ENVIRONMENTS) Tj
+T*
+(? Node/npm environment for local execution) Tj
+T*
+(? TypeScript tooling \(`tsc --noEmit` lint check\)) Tj
+T*
+(? tsx for running TypeScript server directly in development) Tj
+T*
+(? Vite for frontend build and preview) Tj
+T*
+(? AI Studio + Railway style deployment assumptions \(as referenced by project files and) Tj
+T*
+(comments\)) Tj
+T*
+() Tj
+T*
+(OPERATING SYSTEM / DEPLOYMENT OS) Tj
+T*
+(? Primary container base: `node:20-slim` \(Debian slim Linux\)) Tj
+T*
+(? Build dependencies in container: `python3`, `make`, `g++` \(required for native module) Tj
+T*
+(compilation such as SQLite bindings\)) Tj
+T*
+(? Cross-platform local support: any OS supporting Node.js 20+ \(Windows/macOS/Linux\), with) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 10 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 2480 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+50 790 Td
+(Docker recommended for consistent runtime.) Tj
+T*
+() Tj
+T*
+(HIGH-LEVEL ARCHITECTURE) Tj
+T*
+(? Client Layer: React SPA renders pages for pets, shop, cart, user dashboard, staff/admin) Tj
+T*
+(dashboards.) Tj
+T*
+(? API Layer: Express routes grouped by domain \(`/api/auth`, `/api/pets`, `/api/adoptions`,) Tj
+T*
+(etc.\).) Tj
+T*
+(? Security Layer: Bearer token middleware validates JWT and injects user claims.) Tj
+T*
+(? Data Layer: SQLite relational tables for profiles, pets, adoptions, products, cart items,) Tj
+T*
+(orders, order items, medical records, notifications.) Tj
+T*
+(? Integration Layer: Razorpay payment services.) Tj
+T*
+() Tj
+T*
+(DATABASE ENTITIES \(MAJOR TABLES\)) Tj
+T*
+(? `profiles`) Tj
+T*
+(? `pets`) Tj
+T*
+(? `adoptions`) Tj
+T*
+(? `products`) Tj
+T*
+(? `cart_items`) Tj
+T*
+(? `orders`) Tj
+T*
+(? `order_items`) Tj
+T*
+(? `medical_records`) Tj
+T*
+(? `notifications`) Tj
+T*
+() Tj
+T*
+(NON-FUNCTIONAL ENGINEERING CHARACTERISTICS) Tj
+T*
+(? Modularity: clear separation between frontend API client and backend route handlers.) Tj
+T*
+(? Maintainability: TypeScript typing for domain entities and API contracts.) Tj
+T*
+(? Security basics: hashed passwords and protected routes.) Tj
+T*
+(? Scalability baseline: role-driven workflows and normalized relational entities.) Tj
+T*
+(? Deployability: Dockerfile-based build/start process.) Tj
+T*
+() Tj
+T*
+(BUILD AND EXECUTION FLOW \(CURRENT PROJECT\)) Tj
+T*
+(1. Install dependencies with `npm install`.) Tj
+T*
+(2. Configure environment variables \(`GEMINI_API_KEY`, optional `DATABASE_PATH`\).) Tj
+T*
+(3. Start server via `npm run dev` \(tsx executes backend\).) Tj
+T*
+(4. Build frontend via `npm run build`.) Tj
+T*
+(5. Run production container using Dockerfile \(`npm start`\).) Tj
+T*
+() Tj
+T*
+(TOOLS AND DEPENDENCIES SNAPSHOT) Tj
+T*
+(? Runtime/Frameworks: Node.js, Express, React, Vite) Tj
+T*
+(? Security: bcryptjs, jsonwebtoken) Tj
+T*
+(? Database: better-sqlite3) Tj
+T*
+(? UI/UX: Tailwind CSS, lucide-react, motion, sonner) Tj
+T*
+(? Build/Dev: TypeScript, tsx, autoprefixer) Tj
+T*
+() Tj
+T*
+(LIMITATIONS \(CURRENT STATE\)) Tj
+T*
+(? Hardcoded JWT secret and Razorpay test credentials should be moved fully to environment) Tj
+T*
+(variables.) Tj
+T*
+(? SQLite is ideal for mini projects but not horizontally scalable for high concurrency.) Tj
+T*
+(? No automated test suite is currently configured.) Tj
+T*
+(? Some API and UI error-handling paths can be further hardened.) Tj
+T*
+() Tj
+T*
+(FUTURE SCOPE) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 10 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 760 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+50 790 Td
+(? Add unit/integration tests and CI pipeline.) Tj
+T*
+(? Introduce refresh token flow and stronger auth/session controls.) Tj
+T*
+(? Add analytics dashboard and reporting exports.) Tj
+T*
+(? Integrate object storage for pet/product media uploads.) Tj
+T*
+(? Migrate from SQLite to PostgreSQL/MySQL for larger deployments.) Tj
+T*
+() Tj
+T*
+(CONCLUSION) Tj
+T*
+(This project is an effective engineering mini-project model for demonstrating full-stack) Tj
+T*
+(development, database-backed workflow automation, and role-based operational control in a) Tj
+T*
+(real-world inspired domain \(pet adoption + pet care commerce\). It is technically rich enough) Tj
+T*
+(for evaluation while remaining compact, understandable, and extensible.) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 10 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Type /Pages /Count 4 /Kids [ 3 0 R 5 0 R 7 0 R 9 0 R ] >>
+endobj
+11 0 obj
+<< /Type /Catalog /Pages 10 0 R >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000003454 00000 n 
+0000003581 00000 n 
+0000006120 00000 n 
+0000006247 00000 n 
+0000008779 00000 n 
+0000008906 00000 n 
+0000009717 00000 n 
+0000009844 00000 n 
+0000009922 00000 n 
+trailer
+<< /Size 12 /Root 11 0 R >>
+startxref
+9973
+%%EOF
